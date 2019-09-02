@@ -5,7 +5,7 @@ python3_version=$(python3 --version 2>&1)
 echo "\**** Before Installation"
 echo  $python3_version
 echo "\****"
-
+sudo apt-get install python3.7
 sudo apt-get install python-boto
 
 
