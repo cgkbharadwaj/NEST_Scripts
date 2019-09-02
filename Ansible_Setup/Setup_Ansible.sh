@@ -5,25 +5,32 @@ echo "\**** Before Installation"
 echo  $ansible_version
 echo "\****"
 
+sudo apt install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+
+
 sudo apt install ansible
+
 ansible_version=$(ansible --version 2>&1)
 echo "\**** After Installation"
 echo  $ansible_version
 echo "\****"
+apt show ansible
 
 export AWS_ACCESS_KEY_ID='XXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 export AWS_SECRET_ACCESS_KEY='XXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
 cd /etc/ansible/
-wget https://github.com/cgkbharadwaj/ansible_config/blob/master/ec2.ini
-wget https://github.com/cgkbharadwaj/ansible_config/blob/master/ec2.py
+sudo wget https://github.com/cgkbharadwaj/ansible_config/blob/master/ec2.ini
+sudo wget https://github.com/cgkbharadwaj/ansible_config/blob/master/ec2.py
 
 export ANSIBLE_HOSTS=/etc/ansible/ec2.py
 export EC2_INI_PATH=/etc/ansible/ec2.ini
 
 
-
-pip install boto
+#sudo apt install python-pip
+#sudo apt install python3-pip
+#sudo pip3 install boto
 cd /etc/ansible
 sudo chmod +x ec2.ini
 sudo chmod +x ec2.py
