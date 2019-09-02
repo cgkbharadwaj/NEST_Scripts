@@ -1,6 +1,10 @@
 sudo apt-get update
 sudo apt -y upgrade
 
+sudo apt install maven
+
+mvn -version
+
 sudo apt install mysql-server
 
 sudo systemctl status mysql
