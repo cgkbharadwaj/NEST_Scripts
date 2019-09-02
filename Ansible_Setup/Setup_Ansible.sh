@@ -21,8 +21,8 @@ export AWS_ACCESS_KEY_ID='XXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 export AWS_SECRET_ACCESS_KEY='XXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
 cd /etc/ansible/
-sudo wget https://github.com/cgkbharadwaj/ansible_config/blob/master/ec2.ini
-sudo wget https://github.com/cgkbharadwaj/ansible_config/blob/master/ec2.py
+sudo wget https://raw.githubusercontent.com/cgkbharadwaj/ansible_config/master/ec2.ini
+sudo wget https://raw.githubusercontent.com/cgkbharadwaj/ansible_config/master/ec2.py
 
 export ANSIBLE_HOSTS=/etc/ansible/ec2.py
 export EC2_INI_PATH=/etc/ansible/ec2.ini
@@ -39,7 +39,7 @@ ssh-agent bash
 
 cd /home/ubuntu
 cd aws_doc_steps/
-wget https://github.com/cgkbharadwaj/awsKeypai/blob/master/terraformworkload.pem
+wget https://raw.githubusercontent.com/cgkbharadwaj/awsKeypai/master/terraformworkload.pem
 ssh-add /home/ubuntu/aws_doc_steps/terraformworkload.pem
 
 cd /home/ubuntu
