@@ -15,8 +15,3 @@ echo  $java_version
 echo "\*****"
 
 sudo apt  install awscli
-cd /home/ubuntu
-
-cd NEST_Scripts/Terrafor_setup/
-source Setup_terraform.sh
-cd /home/ubuntu/NEST_Scripts/Terrafor_setup
