@@ -16,4 +16,7 @@ echo "\*****"
 
 sudo apt  install awscli
 cd /home/ubuntu
-aws configure
+
+cd NEST_Scripts/Terrafor_setup/
+source Setup_terraform.sh
+cd /home/ubuntu/NEST_Scripts/Terrafor_setup
