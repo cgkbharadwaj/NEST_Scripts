@@ -20,3 +20,5 @@ terraform --version
 which terraform
 
 cd /home/ubuntu/Terraformbase
+
+cd ..

@@ -16,3 +16,5 @@ echo "\**** After Installation"
 echo  $ansible_version
 echo "\****"
 apt show ansible
+export AWS_ACCESS_KEY_ID='XXXXXXXXXXXXXXXXXXXXXXX'
+export AWS_SECRET_ACCESS_KEY='XXXXXXXXXXXXXXXXXXXXXXXXXX'
