@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /etc/ansible/
 sudo wget https://raw.githubusercontent.com/cgkbharadwaj/ansible_config/master/ec2.ini
 sudo wget https://raw.githubusercontent.com/cgkbharadwaj/ansible_config/master/ec2.py

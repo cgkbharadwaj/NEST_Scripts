@@ -1,3 +1,5 @@
+#!/bin/bash
+cd /home/ubuntu
 sudo apt-get update
 sudo apt -y upgrade
 ansible_version=$(ansible --version 2>&1)
@@ -16,5 +18,5 @@ echo "\**** After Installation"
 echo  $ansible_version
 echo "\****"
 apt show ansible
-export AWS_ACCESS_KEY_ID='XXXXXXXXXXXXXXXXXXXXXXX'
-export AWS_SECRET_ACCESS_KEY='XXXXXXXXXXXXXXXXXXXXXXXXXX'
+#export AWS_ACCESS_KEY_ID='XXXXXXXXXXXXXXXXXXXXXXX'
+#export AWS_SECRET_ACCESS_KEY='XXXXXXXXXXXXXXXXXXXXXXXXXX'

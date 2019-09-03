@@ -1,4 +1,5 @@
-cd /home/ubuntu/
+#!/bin/bash
+cd /home/ubuntu
 
 sudo git clone https://github.com/cgkbharadwaj/NEST_Terraform_Repo.git
 
