@@ -13,4 +13,4 @@ java_version=$(java -version 2>&1)
 sudo apt upgrade
 echo "\**** After Installation"
 echo  $java_version
-echo "\****"
+echo "\*****"
