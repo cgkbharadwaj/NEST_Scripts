@@ -3,6 +3,7 @@ cd /home/ubuntu
 echo $(pwd)
 sudo apt-get update
 sudo apt -y upgrade
+sudo apt  install awscli
 java_version=$(java -version 2>&1)
 echo "\**** Before Installation"
 echo  $java_version
