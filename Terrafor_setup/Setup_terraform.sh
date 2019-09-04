@@ -15,8 +15,9 @@ sudo wget https://releases.hashicorp.com/terraform/0.12.7/terraform_0.12.7_linux
 
 sudo unzip terraform_0.12.7_linux_amd64.zip
 
-export PATH=/home/ubuntu/Terraformbase/:$PATH
-#sudo mv terraform /usr/local/bin/
+#export PATH=/home/ubuntu/Terraformbase/:$PATH
+sudo mv terraform /usr/local/bin/
+export PATH=/usr/local/bin/:$PATH
 
 terraform --version
 
