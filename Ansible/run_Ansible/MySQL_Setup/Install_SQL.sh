@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /home/ubuntu
 sudo apt-get update
 sudo apt -y upgrade
