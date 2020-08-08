@@ -1,0 +1,159 @@
+first spin up ece2 instance manually name it Terraform base
+
+cd Documents/awskeys/Nest_new_windows_Subscription/
+ 
+git clone https://github.com/cgkbharadwaj/NEST_Scripts.git
+ 
+cd /home/ubuntu/NEST_Scripts/Initial_Setup/
+source Initial_Setup.sh
+
+aws configure
+
+cd /home/ubuntu/NEST_Scripts/Terrafor_setup
+source Setup_terraform.sh
+
+cd /home/ubuntu/NEST_Scripts/Terrafor_setup
+source run_Terraform.sh
+
+cd /home/ubuntu/Terraformbase
+
+sudo ssh-keygen -f prep-key
+
+cat prep-key.pub
+
+-- copy the pub key and paste it in aws.tf
+
+cd /home/ubuntu/NEST_Terraform_Repo/Spinup_Webserver
+
+sudo vim aws.tf
+
+(esc Press gg. It will take to the first line of the file.
+Then press dG. This will delete from the first line to the last line.)
+
+paste the pub key  in aws.tf
+
+cd /home/ubuntu/Terraformbase
+sudo vim prep-key
+
+
+paste the pub key  in prep-key.pem on mac
+
+
+
+change the tag to prepDemoWebServer
+
+
+sudo terraform init
+
+sudo terraform plan
+
+sudo terraform apply
+
+open a new terminal - 
+cd Documents/awskeys/Nest_new_windows_Subscription/
+chmod 400 prep-key.pem
+
+Add role (instance state settings)
+add space to EBS volume
+
+
+connect via ssh
+
+git clone https://github.com/cgkbharadwaj/NEST_Scripts.git
+
+cd NEST_Scripts/Initial_Setup/
+
+source Initial_Setup.sh
+
+cd /home/ubuntu/NEST_Scripts/Python_Setup
+
+cd /home/ubuntu/NEST_Scripts/Ansible/Ansible_Setup
+
+source Setup_Ansible.sh
+
+export AWS_ACCESS_KEY_ID='AKIA2W3EVOXZV3YJCJMU'
+export AWS_SECRET_ACCESS_KEY='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'
+
+printenv
+
+cd /home/ubuntu/NEST_Scripts/Ansible/Ansible_Setup
+
+source Setup_Ansible_part2.sh
+ssh-agent bash
+
+cd /home/ubuntu
+sudo mkdir aws_doc_steps
+cd /home/ubuntu/aws_doc_steps
+
+sudo wget https://raw.githubusercontent.com/cgkbharadwaj/awsKeypai/master/prep-key.pem
+ssh-add /home/ubuntu/aws_doc_steps/prep-key.pem
+
+cd /home/ubuntu
+sudo mkdir ansible_control_center
+cd /home/ubuntu/ansible_control_center
+sudo git clone https://github.com/ansible/ansible-examples.git
+cd ansible-examples/
+
+
+cd /home/ubuntu/NEST_Scripts/Ansible/run_Ansible
+
+cd MySQL_Setup/
+source Install_SQL.sh
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+show databases;
+
+CREATE DATABASE users_database;
+
+show databases;
+exit()
+
+
+mvn -version
+
+mysql --version
+
+cd /home/ubuntu/NEST_Scripts/Ansible/run_Ansible
+
+
+open jenkins -> global tool config
+
+Java:
+
+java
+
+/usr/lib/jvm/java-8-openjdk-amd64
+
+Maven :
+
+maven
+
+/usr/share/maven
+
+
+
+
+
+
+cd /home/ubuntu
+
+sudo mkdir output_jar
+
+sudo cp -i /var/lib/jenkins/workspace/NestLightHouse/nest-swagger2-demo/target/nest-swagger2-demo-0.0.1-SNAPSHOT.jar /home/ubuntu/output_jar/
+
+cd /home/ubuntu/output_jar/
+
+java -jar nest-swagger2-demo-0.0.1-SNAPSHOT.jar
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
